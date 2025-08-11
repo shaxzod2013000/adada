@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.box{
+    width: 200px;
+    height: 200px;
+    border: 2px solid red;
+    background-color: aqua;
+    position: relative;
+    animation-name: masha;
+    animation-duration: 4s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+@keyframes masha {
+    0%{
+        left: 0;
+        top: 0;
+        background-color: aqua;
+    }
+    25%{
+        left: 300px;
+        top: 0;
+        background-color: blue;
+    }
+    50%{
+        left: 300px;
+        top: 300px;
+        background-color: green;
+    }
+    75%{
+        left: 300px;
+        right: 300px;
+        top: -300px;
+    }
+}
